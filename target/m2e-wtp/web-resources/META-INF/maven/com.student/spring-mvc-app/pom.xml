@@ -26,28 +26,24 @@
       <version>3.8.1</version>  
       <scope>test</scope>  
     </dependency>  
-      
 	    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->  
 		<dependency>  
 		    <groupId>org.springframework</groupId>  
 		    <artifactId>spring-webmvc</artifactId>  
 		    <version>5.1.1.RELEASE</version>  
 		</dependency>  
-		  
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->  
 		<dependency>    
 		    <groupId>javax.servlet</groupId>    
 		    <artifactId>servlet-api</artifactId>    
 		    <version>3.0-alpha-1</version>    
-		</dependency>  
-		
+		</dependency> 
 		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 		<dependency>
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>jstl</artifactId>
 		    <version>1.2</version>
 		</dependency>
-		
 		<!-- For JSON Reponse (If i use Spring Boot that is auto included -->
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
@@ -64,8 +60,24 @@
 		    <artifactId>jackson-annotations</artifactId>
 		    <version>2.15.0</version>
 		</dependency>
-
-  
+		 <!-- Spring Data JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+		  <!-- MySQL Connector -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.16</version>
+		</dependency>
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>6.3.1.Final</version>
+		</dependency>
   </dependencies>  
 
   <build>

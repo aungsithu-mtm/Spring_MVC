@@ -15,14 +15,14 @@ import java.util.List;
 //@RequestMapping("/student.com")
 public class DemoController {
 
-    @GetMapping("/student")
+    @GetMapping("/test")
     public String helloWorld(Model model) {
     	Student student = new Student("Aung Aung", 23, "Second year");
     	model.addAttribute("student", student);
         return "view/test";
     }
     
-    @GetMapping("/student/list")
+    @GetMapping("/test/list")
     public String studentList(Model model) {
     	List<Student> students = new ArrayList<>();
     	students.add(new Student("AST", 20, "Sophomore"));
@@ -34,7 +34,7 @@ public class DemoController {
     }
     
     @ResponseBody
-    @GetMapping("/student/list/api")
+    @GetMapping("/test/list/api")
     public List<Student> studentApi() {
     	List<Student> students = new ArrayList<>();
     	students.add(new Student("AST", 20, "Sophomore"));
