@@ -9,12 +9,7 @@
 
     <!-- Welcome files configuration -->
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
-        <welcome-file>index.htm</welcome-file>
-        <welcome-file>default.html</welcome-file>
-        <welcome-file>default.jsp</welcome-file>
-        <welcome-file>default.htm</welcome-file>
     </welcome-file-list>
    
     <!-- DispatcherServlet configuration -->
@@ -26,15 +21,13 @@
    
     <!-- Servlet Mapping -->
     <servlet-mapping>
-	    <servlet-name>studentDispatch</servlet-name>
-	    <url-pattern>/student.com/*</url-pattern>
-	</servlet-mapping>
-	
-	
+        <servlet-name>studentDispatch</servlet-name>
+        <url-pattern>/student.com/*</url-pattern>
+    </servlet-mapping>
+
     <!-- Context config location -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/studentDispatch-Servlet.xml</param-value>
+        <param-value>/WEB-INF/studentDispatch-servlet.xml</param-value>
     </context-param>
-   
 </web-app>
